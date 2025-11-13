@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>考试加油站</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Noto+Sans+SC:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-bubbles">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <main class="letter-stage">
+      <button
+        id="openLetter"
+        class="envelope"
+        type="button"
+        aria-expanded="false"
+        aria-controls="letterMessage"
+      >
+        <span class="heart" aria-hidden="true">💌</span>
+        <span class="cta">点我开启应援信件</span>
+      </button>
+
+      <article
+        id="letterMessage"
+        class="letter-message"
+        hidden
+        tabindex="-1"
+        aria-live="polite"
+      >
+        <button
+          id="closeLetter"
+          class="close-letter"
+          type="button"
+          aria-label="关闭信件"
+        >
+          ×
+        </button>
+        <h2>致即将迎战的你</h2>
+        <p>
+          你已经走过了一段漫长的奋斗路。相信每一小时的努力都有意义，每一秒的放松都在帮你补充能量。
+        </p>
+        <p>
+          深呼吸，带着微笑继续前进。考试只是一个里程碑，而你才是写下最闪耀故事的人！
+        </p>
+        <p class="signature">来自河亭德英 ✨</p>
+      </article>
+    </main>
+
+    <audio id="bgMusic" loop>
+      <source
+        src="assets/audio/bg-music.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
